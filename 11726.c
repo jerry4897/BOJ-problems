@@ -19,5 +19,6 @@ long long int D(int n)
 	if (memo[n] > 0) return memo[n];
 	memo[n] = D(n - 1) + D(n - 2);
 	memo[n] %= 10007;
+	
 	return memo[n];
 }
